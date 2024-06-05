@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centers the calculator vertically and horizontally */
+
+    height: 100vh;
+    /* Sets the height of the body to the full viewport height */
+
+    background-color: #f0f0f0;
+    /* Sets the background color of the body */
+
+    margin: 0;
+    /* Removes default margin */
+
+    font-family: Arial, sans-serif;
+    /* Sets the font family for the body */
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    /* Adds a border around the calculator */
+
+    border-radius: 10px;
+    /* Rounds the corners of the calculator */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow around the calculator */
+
+    overflow: hidden;
+    /* Hides any overflow */
+}
+
+.display {
+    background-color: #333;
+    /* Sets the background color of the display */
+
+    padding: 20px;
+    /* Adds padding around the display */
+
+    text-align: right;
+    /* Aligns text to the right */
+}
+
+.display input {
+    width: 100%;
+    /* Sets the width of the input to 100% of the display container */
+
+    background: none;
+    /* Removes the default background of the input */
+
+    border: none;
+    /* Removes the default border of the input */
+
+    color: white;
+    /* Sets the text color to white */
+
+    font-size: 2em;
+    /* Sets the font size of the text */
+
+    text-align: right;
+    /* Aligns text to the right */
+}
+
+.buttons {
+    display: grid;
+    /* Uses CSS Grid for the button layout */
+
+    grid-template-columns: repeat(4, 1fr);
+    /* Creates a 4-column grid with equal width columns */
+}
+
+.btn {
+    background-color: #fff;
+    /* Sets the background color of the buttons */
+
+    border: 1px solid #ccc;
+    /* Adds a border around the buttons */
+
+    padding: 20px;
+    /* Adds padding inside the buttons */
+
+    font-size: 1.5em;
+    /* Sets the font size of the buttons */
+
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over the buttons */
+
+    transition: background-color 0.3s;
+    /* Adds a transition effect for the background color */
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    /* Changes the background color when hovering over the buttons */
+}
+
+.operator {
+    background-color: #ff9500;
+    /* Sets the background color for operator buttons */
+
+    color: white;
+    /* Sets the text color to white for operator buttons */
+}
+
+.operator:hover {
+    background-color: #e68900;
+    /* Changes the background color when hovering over operator buttons */
+}
+
+.equal {
+    grid-column: span 4;
+    /* Spans the equal button across all 4 columns */
+
+    background-color: #ff2d55;
+    /* Sets the background color for the equal button */
+
+    color: white;
+    /* Sets the text color to white for the equal button */
+}
+
+.equal:hover {
+    background-color: #e0274d;
+    /* Changes the background color when hovering over the equal button */
+}
